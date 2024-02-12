@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" type="image/png" href="/icon.png" />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="./style.css">
+
+  <script defer src="./script.js"></script>
+
+  <title>Mapty</title>
+</head>
+
+<body>
+  <aside class="aside">
+    <img src="./logo.png" alt="" class="logo">
+    <ul class="workouts">
+      <li class="form-item form-item--hidden">
+        <form action="" class="form">
+
+          <div class="input-container">
+            <label class="label" for="type">Type</label>
+            <select name="type" id="type" class="form-input">
+              <option value="running">Running</option>
+              <option value="cycling">Cycling</option>
+            </select>
+          </div>
+
+          <div class="input-container">
+            <label for="distance" class="label">Distance</label>
+            <input type="text" id="distance" placeholder="km" class="form-input">
+          </div>
+
+          <div class="input-container">
+            <label for="duration" class="label">Duration</label>
+            <input type="text" id="duration" placeholder="min" class="form-input">
+          </div>
+
+          <div class="input-container">
+            <label for="cadence" class="label">Cadence</label>
+            <input type="text" id="cadence" placeholder="step/min" class="form-input">
+          </div>
+
+
+          <div class="input-container form-input--hidden">
+            <label for="elev" class="label">Elev Gain</label>
+            <input type="text" id="elev" placeholder="meters" class="form-input">
+          </div>
+        </form>
+      </li>
+
+
+      <li class="workout-item workout--running">
+        <h2 class="workout-title">Running on February 12</h2>
+        <div class="workout-details">
+          <span class="workout-logo">🏃‍♂️</span>
+          <span class="workout-value">20</span>
+          <span class="workout-unite">km</span>
+        </div>
+        <div class="workout-details">
+          <span class="workout-logo">⏱</span>
+          <span class="workout-value">20</span>
+          <span class="workout-unite">min</span>
+        </div>
+        <div class="workout-details">
+          <span class="workout-logo">⚡️</span>
+          <span class="workout-value">20</span>
+          <span class="workout-unite"> min/km</span>
+        </div>
+        <div class="workout-details">
+          <span class="workout-logo"> 👣 </span>
+          <span class="workout-value">20</span>
+          <span class="workout-unite">spm</span>
+        </div>
+      </li>
+
+      <li class="workout-item workout--cycling">
+        <h2 class="workout-title">Cycling on February 12</h2>
+        <div class="workout-details">
+          <span class="workout-logo">🚴</span>
+          <span class="workout-value">20</span>
+          <span class="workout-unite">km</span>
+        </div>
+        <div class="workout-details">
+          <span class="workout-logo">⏱</span>
+          <span class="workout-value">20</span>
+          <span class="workout-unite">min</span>
+        </div>
+        <div class="workout-details">
+          <span class="workout-logo">⚡️</span>
+          <span class="workout-value">20</span>
+          <span class="workout-unite"> min/km</span>
+        </div>
+        <div class="workout-details">
+          <span class="workout-logo"> 🚵</span>
+          <span class="workout-value">20</span>
+          <span class="workout-unite">spm</span>
+        </div>
+      </li>
+
+
+
+
+
+      <!-- <li class="workout-item workout--running">
+        <h2 class="workout-title">Running on February 12</h2>
+        <div class="workout-details">
+          <span class="workout-logo">🏃‍♂️</span>
+          <span class="workout-value">20</span>
+          <span class="workout-unite">km</span>
+        </div>
+        <div class="workout-details">
+          <span class="workout-logo">⏱</span>
+          <span class="workout-value">20</span>
+          <span class="workout-unite">min</span>
+        </div>
+        <div class="workout-details">
+          <span class="workout-logo">⚡️</span>
+          <span class="workout-value">20</span>
+          <span class="workout-unite"> min/km</span>
+        </div>
+        <div class="workout-details">
+          <span class="workout-logo"> 🦶🏼 </span>
+          <span class="workout-value">20</span>
+          <span class="workout-unite">spm</span>
+        </div>
+      </li>
+
+      <li class="workout-item workout--cycling">
+        <h2 class="workout-title">Cycling on February 12</h2>
+        <div class="workout-details">
+          <span class="workout-logo">🚴</span>
+          <span class="workout-value">20</span>
+          <span class="workout-unite">km</span>
+        </div>
+        <div class="workout-details">
+          <span class="workout-logo">⏱</span>
+          <span class="workout-value">20</span>
+          <span class="workout-unite">min</span>
+        </div>
+        <div class="workout-details">
+          <span class="workout-logo">⚡️</span>
+          <span class="workout-value">20</span>
+          <span class="workout-unite"> min/km</span>
+        </div>
+        <div class="workout-details">
+          <span class="workout-logo"> ⛰</span>
+          <span class="workout-value">20</span>
+          <span class="workout-unite">spm</span>
+        </div>
+      </li> -->
+    </ul>
+    <p class="copyright">Copyright text here</p>
+  </aside>
+
+
+
+  <div id="map">map</div>
+
+
+  <div class="modal hidden">
+    <button class="btn--close-modal">&times;</button>
+    <img src="./logo.png" alt="" class="logo">
+
+    <p class="error-msg">Please, provide valid numbers</p>
+
+    <button class="close-modal">Close</button>
+  </div>
+  <div class="overlay hidden"></div>
+</body>
+
+</html>
